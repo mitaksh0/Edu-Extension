@@ -3,6 +3,7 @@ for(m=3;m<elementsLen;m++){
     var a = document.getElementById("main").getElementsByTagName("section")[m].getElementsByTagName("div")[1].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("h2")[0].getElementsByTagName("span")[0].innerHTML;
     a = a.replace(/<|>|!|-/g,"")
     if(a=="Education"){
+        m = m+2;
         var eduLen = document.getElementsByTagName("section")[m].getElementsByClassName("pvs-list__outer-container")[0].getElementsByTagName("ul")[0].getElementsByTagName("li").length;
         var newObj = [];
         for(i=0;i<eduLen;i++){
